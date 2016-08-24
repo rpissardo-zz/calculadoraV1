@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../javascript/script.js"></script>
+
+</head>
+<body>
+	<div class="structure">
+	<input type="text" class="keyboard_area" onkeypress="keyboard(event)">
+		<div class="lcd_area">
+			<p id="lcd" class="result"></p>
+		</div>
+		<div id="mask" class="lcd_mask">888888888</div>
+		<div class="head_area">
+			<button class="c_btn" onClick="fork('c');">Clear</button>
+			<a href="http://www.codus.com.br"><img src="../img/codus_logo.png" class="logo"></a>
+		</div>
+		<div class="number_area">
+			<button class="number_btn" onClick="fork(1);">1</button>
+			<button class="number_btn" onClick="fork(2);">2</button>
+			<button class="number_btn" onClick="fork(3);">3</button>
+			<button class="number_btn" onClick="fork(4);">4</button>
+			<button class="number_btn" onClick="fork(5);">5</button>
+			<button class="number_btn" onClick="fork(6);">6</button>
+			<button class="number_btn" onClick="fork(7);">7</button>
+			<button class="number_btn" onClick="fork(8);">8</button>
+			<button class="number_btn" onClick="fork(9);">9</button>
+			<button class="number_btn" onClick="fork(0);">0</button>
+			<button class="equals_btn" onClick="fork('=');">=</button>
+		</div>
+		<div class="op_area">
+			<button class="op_btn" onClick="fork('+');">+</button>
+			<button class="op_btn" onClick="fork('-');">-</button>
+			<button class="op_btn" onClick="fork('/');">/</button>
+			<button class="op_btn" onClick="fork('*');">X</button>
+			<button class="op_btn" onClick="fork('.');">.</button>
+		</div>
+		<div class="on_off_btn">
+			<img id="on_off_btn" class="on_off_img" src="../img/off.png">
+			<button class="on_btn" onclick="on();"></button>
+			<button class="off_btn" onclick="off();"></button>
+		</div>
+	</div>
+
+	
+
+</body>
+</html>

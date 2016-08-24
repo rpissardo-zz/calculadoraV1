@@ -1,0 +1,179 @@
+@font-face{
+	font-family: 'LCD14';
+	src: url(../fonts/font_lcd/otf/LCD14.otf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	margin: 0px 0px 25px 145px;
+	width: 115px;
+	height: 35px;
+	position: absolute;
+}
+
+.structure{
+	width: 300px;
+	height: 400px;
+	background-color: #f2f1f7;
+	display: block;
+	margin: auto;
+	position: absolute;
+	border-radius: 60px;
+	border: 0px solid;
+	box-shadow: 10px 10px 0px #000000;
+	margin: 10% 0px 0px 35%;
+}
+
+.head_area{
+	position: absolute;
+	margin: 89px 10px 10px 10px;
+}
+
+.lcd_area{
+	width: 240px;
+	height: 60px;
+	position: absolute;
+	margin: 20px 25px 35px 25px;
+	border-radius: 10px;
+	border-bottom: 0px black solid;
+	border-left: 5px #404040 solid;
+    border-top: 5px #404040 solid;
+	border-right: 0px black solid;
+	background-color: #aece56;
+}
+
+.number_area{
+	width: 215px;
+	height: 250px;
+	/*background-color: green;*/
+	position: absolute;
+	margin: 125px 0px 0px 15px;
+}
+
+.number_btn{
+	width: 50px;
+	height: 50px;
+	margin: 7px 9px;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+	background-color: #2f2f2f;
+	outline: none;
+}
+
+.c_btn{
+	width: 120px;
+	height: 30px;
+	margin: 5px 0px 0px 15px;
+	border-radius: 10px;
+	font-size: 1em;
+	color: white;
+	font-weight: bold;
+	background-color: #e97e28;
+	outline: none;
+	position: absolute;
+}
+
+.equals_btn{
+	width: 120px;
+	height: 50px;
+	margin: 7px 0px 0px 14px;
+	border-radius: 10px;
+	position: absolute;
+	font-size: 2em;
+	color: white;
+	font-weight: bold;
+	background-color: #aad158;
+	outline: none;
+}
+
+.op_area{
+	width: 65px;
+	height: 250px;
+	/*background-color: yellow;*/
+	position: absolute;
+	margin: 125px 10px 10px 220px;
+}
+
+.op_btn{
+	width: 40px;
+	height: 40px;
+	margin: 7px 0px 4px 18px;
+	border-radius: 30px;
+	font-size: 2em;
+	color: white;
+	font-weight: bold;
+	background-color: #2f2f2f;
+	outline: none;
+}
+
+.number_btn:hover, .equals_btn:hover, .op_btn:hover{
+	color: #5f6060;
+}
+
+.c_btn:hover{
+	color: #000000;
+}
+
+.result{
+	margin: 15px auto;
+	text-align: right;
+	font-size: 37px;
+	font-family: 'LCD14'; 
+	display: none;
+}
+
+.keyboard_area{
+	width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.lcd_mask{
+	margin: 40px 0px 0px 30px;
+    text-align: right;
+    font-size: 37px;
+    font-family: 'LCD14';
+    height: 30px;
+    width: 240px;
+    position: absolute;
+    opacity: 0.1;
+    display: none;
+}
+
+.on_off_btn{
+	position: absolute;
+    margin: 377px 0px 0px 133px;
+    
+}
+
+.on_off_img{
+	width: 50px;
+    height: 20px;
+    /* margin: -1px 0px 0px -1px; */
+    position: absolute;
+    /* border-radius: 10px; */
+    /* box-shadow: 1px 1px 5px black; */
+    
+}
+
+.on_btn{
+	width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 5px;
+    opacity: 0;
+}
+.off_btn{
+	width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px -5px;
+    opacity: 0;
+}
